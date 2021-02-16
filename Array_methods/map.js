@@ -38,11 +38,22 @@ for(i =0; i<students.length;i++){
 // create the same effect with the ordinary for loop
 
 const modifiedStudents = []
-for(const std in students){
+for(let std in students){
     const newDict = {}
     newDict.id = students[std].id
     newDict.name = students[std].name + 'z'
     modifiedStudents.push(newDict)
 }
 
-console.log(modifiedStudents)
+// craete the same effect with for of
+const editStudentsData = []
+
+for(let std in students){
+    console.log('for the for of', students[std])
+    const newDict = {}
+    newDict.id = students[std].id
+    newDict.name = students[std].name + 'zz'
+    editStudentsData.push(newDict)
+}
+
+console.log(editStudentsData)
