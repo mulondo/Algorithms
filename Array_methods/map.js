@@ -1,3 +1,9 @@
+// for - loops through a block of code a number of times
+// for/in - loops through the properties of an object
+// for/of - loops through the values of an iterable object
+// while - loops through a block of code while a specified condition is true
+// do/while - also loops through a block of code while a specified condition is true
+
 const students = [
     {
         id: 1,
@@ -29,4 +35,14 @@ for(i =0; i<students.length;i++){
     newStudents.push(newDict)
 }
 
-console.log(newStudents)
+// create the same effect with the ordinary for loop
+
+const modifiedStudents = []
+for(const std in students){
+    const newDict = {}
+    newDict.id = students[std].id
+    newDict.name = students[std].name + 'z'
+    modifiedStudents.push(newDict)
+}
+
+console.log(modifiedStudents)
