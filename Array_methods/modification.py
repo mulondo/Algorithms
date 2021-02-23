@@ -1,4 +1,4 @@
-""" 
+"""
 append()	Adds an element at the end of the list
 clear()	Removes all the elements from the list
 copy()	Returns a copy of the list
@@ -9,7 +9,7 @@ insert()	Adds an element at the specified position
 pop()	Removes the element at the specified position
 remove()	Removes the first item with the specified value
 reverse()	Reverses the order of the list
-sort()	Sorts the list 
+sort()	Sorts the list
 """
 
 students = [
