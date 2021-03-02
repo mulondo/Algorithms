@@ -15,3 +15,10 @@ class Node:
             else:
                 root.left = self.insert(root.left, key)
         return root
+
+     # A utility function to do inorder tree traversal
+    def inorder(self,root):
+        if root:
+            self.inorder(root.left)
+            print(root.val)
+            self.inorder(root.right)
