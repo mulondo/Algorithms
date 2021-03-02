@@ -8,9 +8,9 @@ def insert(root, key):
     if root is None:
         return Node(key)
     else:
-        if root.val == key:
+        if root.value == key:
             return root
-        elif root.val < key:
+        elif root.value < key:
             root.right = insert(root.right, key)
         else:
             root.left = insert(root.left, key)
@@ -20,7 +20,7 @@ def insert(root, key):
 def inorder(root):
     if root:
         inorder(root.left)
-        print(root.val)
+        print(root.value)
         inorder(root.right)
 
 # Driver program to test the above functions
