@@ -8,4 +8,5 @@ const students = [
     {id:7,fname:'denise',marks:66}
 ]
 
-
+const failed_students = students.filter(student => student.marks<50)
+console.log(failed)
