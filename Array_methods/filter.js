@@ -10,3 +10,5 @@ const students = [
 
 const failed_students = students.filter(student => student.marks<50)
 console.log(failed)
+
+
