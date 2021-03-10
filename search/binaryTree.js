@@ -1,3 +1,3 @@
 class Node{
-    constructor()
+    constructor(key)
 }
