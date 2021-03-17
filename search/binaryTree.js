@@ -2,6 +2,6 @@ class Node{
     constructor(key)
 }
 
-class roo {
-    
+class root{
+
 }
