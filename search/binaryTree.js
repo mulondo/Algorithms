@@ -1,7 +1,7 @@
-class Node{
-    constructor(key)
+function setUp(){
+    Node n = new Node()
 }
 
-class root{
-
+function Tree() {
+    this.root = null
 }
