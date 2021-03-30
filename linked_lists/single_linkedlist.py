@@ -29,5 +29,15 @@ class linked_list:
         while cur.next!=None:
             cur = cur.next
             elements.append(cur.data)
-        return elements
-        
+        print(elements)
+
+linkedList = linked_list()
+def addEl():
+    elem = [1,3,5,6,7,9]
+    for e in elem:
+        linkedList.addElement(e)
+addEl()
+linkedList.display()
+
+x = input("enter the element: ")
+print(x)
