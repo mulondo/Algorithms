@@ -71,3 +71,5 @@ by.insert(2)
 by.insert(3)
 by.insert(0)
 by.insert(0)
+
+by.display()
