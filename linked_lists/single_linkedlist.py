@@ -7,10 +7,10 @@ class linked_list:
     def __init__(self):
         self.head = Node()
 
-    def addElement(self,data):
+    def addElement(self, data):
         new_node = Node(data)
         cur = self.head
-        while cur.next!=None:
+        while cur.next!77=None:
             cur = cur.next
         cur.next = new_node
 
