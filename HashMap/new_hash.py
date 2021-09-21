@@ -1,6 +1,6 @@
 class HashTable:
     def __init__(self):
-        self.MAX = 100
+        self.MAX = 10
         self.arr = [None for i in range(self.MAX)]
 
     def get_hash(self, key):
@@ -20,6 +20,7 @@ class HashTable:
 
 myhash = HashTable()
 myhash['march 6'] = 150
+myhash['march 17'] =120
 # print(myhash.arr)
 
 print('This is the value :', myhash['march 6'])
