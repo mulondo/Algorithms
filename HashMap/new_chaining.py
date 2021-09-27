@@ -23,10 +23,18 @@ class HashTable:
 
     def __getitem__(self, key):
         has_val = self.get_hash(key)
-        return self.arr[has_val]
-myhash = HashTable()
-myhash['match 6'] = 85
-myhash['match 6'] = 82
-myhash['match 17'] = 20
+        for idx, element in enumerate(self.arr[has_val]):
+            if len(element) < 2:
+                print('Value not found')
+            elif element[0] == key:
+                return element[1]
 
-print(myhash.arr)
+
+my_hash = HashTable()
+my_hash['match 6'] = 85
+my_hash['match 6'] = 82
+my_hash['match 20'] = 45
+my_hash['match 12'] = 100
+my_hash['match 17'] = 20
+
+print('this is the result: ', my_hash['match 6'])
