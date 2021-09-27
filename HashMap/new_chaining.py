@@ -10,17 +10,20 @@ class HashTable:
         return ha % self.MAX
 
     def __setitem__(self, key, value):
-        hashVal = self.get_hash(key)
+        has_val = self.get_hash(key)
         found = False
-        for idx, element in enumerate(self.arr[hashVal]):
+        for idx, element in enumerate(self.arr[has_val]):
             if len(element) == 2 and element[0] == key:
                 print('the index: ', idx, element)
-                self.arr[hashVal][idx] = (key, value)
+                self.arr[has_val][idx] = (key, value)
                 found = True
                 break
         if not found:
-            self.arr[hashVal].append((key, value))
+            self.arr[has_val].append((key, value))
 
+    def __getitem__(self, key):
+        has_val = self.get_hash(key)
+        return self.arr[has_val]
 myhash = HashTable()
 myhash['match 6'] = 85
 myhash['match 6'] = 82
