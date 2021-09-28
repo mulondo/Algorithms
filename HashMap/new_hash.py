@@ -21,6 +21,5 @@ class HashTable:
 myhash = HashTable()
 myhash['march 6'] = 150
 myhash['march 17'] =120
-# print(myhash.arr)
 
 print('This is the value :', myhash['march 6'])
