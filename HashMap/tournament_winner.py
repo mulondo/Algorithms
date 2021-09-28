@@ -1,8 +1,9 @@
 """
     Tournament winner challenge
 """
-competitions = [['html', 'c#'], ['c#', 'python'], ['python', 'html']]
-results = [0, 0, 1]
+# competitions = [['html', 'c#'], ['c#', 'python'], ['python', 'html']]
+competitions = [["Bulls", "Eagles"]]
+results = [1]
 HOME_WIN = 1
 WIN = 3
 scores = {}
@@ -31,3 +32,31 @@ def update_score(winner):
 
 
 tournament_winner()
+
+WIN = 3
+HOME_TEAM_WIN = 1
+
+
+# def tournamentWinner(competitions, results):
+#     scores = {}
+#     overall_winner = ''
+#
+#
+# for idx, competition in enumerate(competitions):
+#     result = results[idx]
+#     home_team, away_team = competition
+#     winner = home_team if result == HOME_TEAM_WIN else away_team
+#     update_scores(winner, scores)
+#     score_values = scores.values()
+#
+#     if scores[winner] == max(score_values):
+#         overall_winner = winner
+# return overall_winner
+#
+#
+# def update_scores(winner, scores):
+#     if not winner in scores:
+#         scores[winner] = WIN
+#
+#     else:
+#         scores[winner] += WIN
