@@ -1,4 +1,7 @@
 class HashTable:
+    """
+    Defines the behavior of a hashmap
+    """
     def __init__(self):
         self.MAX = 10
         self.arr = [None for i in range(self.MAX)]
