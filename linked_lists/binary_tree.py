@@ -1,4 +1,7 @@
 class Node:
+    """
+        Node class that defines the behavior of a node
+    """
     def __init__(self, data = None, left = None, right = None):
         self.value = data
         self.left = None
@@ -6,6 +9,9 @@ class Node:
 
 
 class BinaryTree:
+    """
+        Binary tree class that defines the behavior of a binary tree
+    """
     def __init__(self):
         self.root = None
 
