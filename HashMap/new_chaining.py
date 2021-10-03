@@ -1,15 +1,26 @@
 class HashTable:
+    """
+        Hash table class
+    """
     def __init__(self):
         self.MAX = 10
         self.arr = [[] for i in range(self.MAX)]
 
     def get_hash(self, key):
+        """
+        this function generates a hash
+        """
         ha = 0
         for char in key:
             ha += ord(char)
         return ha % self.MAX
 
     def __setitem__(self, key, value):
+        """
+        :param key:
+        :param value:
+        :return:
+        """
         has_val = self.get_hash(key)
         found = False
         for idx, element in enumerate(self.arr[has_val]):
