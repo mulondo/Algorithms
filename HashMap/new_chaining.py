@@ -33,6 +33,10 @@ class HashTable:
             self.arr[has_val].append((key, value))
 
     def __getitem__(self, key):
+        """
+        :param key:
+        :return:
+        """
         has_val = self.get_hash(key)
         for idx, element in enumerate(self.arr[has_val]):
             if len(element) < 2:
