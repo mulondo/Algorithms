@@ -1,9 +1,16 @@
 class HashTable:
+    """
+    Hash table class
+    """
     def __init__(self):
         self.max = 10
         self.arr = [[] for i in range(self.max)]
 
     def get_hash(self, key):
+        """
+        :param key:
+        :return:
+        """
         hn = 0
         for char in key:
             hn += ord(char)
