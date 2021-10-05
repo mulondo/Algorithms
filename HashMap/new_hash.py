@@ -13,6 +13,11 @@ class HashTable:
         return hash % self.MAX
 
     def __setitem__(self, key, value):
+        """
+        :param key:
+        :param value:
+        :return:
+        """
         h = self.get_hash(key)
         self.arr[h] = value
 
