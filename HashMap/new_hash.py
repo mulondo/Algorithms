@@ -26,8 +26,8 @@ class HashTable:
         return self.arr[h]
 
 
-myhash = HashTable()
-myhash['march 6'] = 150
-myhash['march 17'] =120
+my_hash = HashTable()
+my_hash['march 6'] = 150
+my_hash['march 17'] =120
 
-print('This is the value :', myhash['march 6'])
+print('This is the value :', my_hash['march 6'])
