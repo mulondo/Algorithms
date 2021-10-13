@@ -3,6 +3,7 @@
 """
 # competitions = [['html', 'c#'], ['c#', 'python'], ['python', 'html']]
 competitions = [["Bulls", "Eagles"]]
+competition1 = [["Java", "C#"]]
 results = [1]
 HOME_WIN = 1
 WIN = 3
