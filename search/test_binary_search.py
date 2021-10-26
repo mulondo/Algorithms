@@ -9,8 +9,8 @@ class binary_tree:
     def __init__(self):
         self.root = None
 
-    def insert(self,val):
-        if self.root ==None:
+    def insert(self, val):
+        if self.root is None:
             self.root = Node(val)
         else:
             self._insert(val, self.root)
@@ -19,12 +19,12 @@ class binary_tree:
         new_node = Node(val)
 
         if val < cur_node.value:
-            if cur_node.left == None:
+            if cur_node.left is None:
                 cur_node.left = new_node
             else:
                 self._insert(val,cur_node.left)
         elif val > cur_node.value:
-            if cur_node.right == None:
+            if cur_node.right is None:
                 cur_node.right = new_node
             else:
                 self._insert(val,cur_node.right)
