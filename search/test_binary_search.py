@@ -15,44 +15,44 @@ class binary_tree:
         else:
             self._insert(val, self.root)
 
-    def _insert(self,val,cur_node):
+    def _insert(self, val, cur_node):
         new_node = Node(val)
 
         if val < cur_node.value:
             if cur_node.left is None:
                 cur_node.left = new_node
             else:
-                self._insert(val,cur_node.left)
+                self._insert(val, cur_node.left)
         elif val > cur_node.value:
             if cur_node.right is None:
                 cur_node.right = new_node
             else:
-                self._insert(val,cur_node.right)
+                self._insert(val, cur_node.right)
         else:
             print(" The value already exists")
 
     def display(self):
-        if self.root!=None:
+        if self.root is not None:
             self._display(self.root)
 
     def _display(self, cur_node):
-        if cur_node!=None:
+        if cur_node is not None:
             self._display(cur_node.left)
             print(str(cur_node.value))
             self._display(cur_node.right)
 
     def search(self,val):
-        if self.root!=None:
+        if self.root is not None:
             return self._search(val,self.root)
         else:
             return False
 
-    def _search(self,val,cur_node):
+    def _search(self, val, cur_node):
         if val == cur_node.value:
-            print("This is the value :",cur_node.value)
-        elif val < cur_node.value and cur_node.left!=None:
+            print("This is the value :", cur_node.value)
+        elif val < cur_node.value and cur_node.left is not None:
             return self._search(val,cur_node.left)
-        elif val > cur_node.value and cur_node.right!=None:
+        elif val > cur_node.value and cur_node.right is not None:
             return self._search(val,cur_node.right)
         else:
             print ("The value does not exist")
