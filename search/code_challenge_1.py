@@ -39,7 +39,20 @@ class BinaryTree:
             self._display(current_node.left)
             self._display(current_node.right)
 
-    def search
+    def search(self, value):
+        if self.root is not None:
+            self._search(value, self.root)
+
+    def _search(self, value, current_node):
+        if value == current_node.value:
+            print(f"The value {value} is found")
+        elif value < current_node.value and current_node.left is not None:
+            self._search(value, current_node.left)
+        elif value > current_node.value and current_node.right is not None:
+            self._search(value, current_node.right)
+        else:
+            print(f"The value {value} is not found")
+
 
 binary = BinaryTree()
 binary.add_elements(6)
@@ -49,3 +62,4 @@ binary.add_elements(2)
 binary.add_elements(14)
 binary.add_elements(14)
 binary.display()
+binary.search(2)
