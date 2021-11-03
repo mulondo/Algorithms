@@ -22,6 +22,14 @@ class LinkList:
             current_node = current_node.next
         return total
 
+    def display(self):
+        current_node = self.head
+        elements = []
+        while current_node.next is not None:
+            current_node = current_node.next
+            elements.append(current_node.data)
+        return elements
+
 
 linked_list = LinkList()
 linked_list.add_element(7)
@@ -31,3 +39,4 @@ linked_list.add_element(8)
 linked_list.add_element(10)
 linked_list.add_element(1)
 print(linked_list.length())
+print(linked_list.display())
