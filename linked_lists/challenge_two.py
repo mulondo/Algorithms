@@ -40,3 +40,4 @@ linked_list.add_element(10)
 linked_list.add_element(1)
 print(linked_list.length())
 print(linked_list.display())
+
