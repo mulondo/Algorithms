@@ -11,6 +11,7 @@ class linkedList:
     def addElement(self, data):
         new_node = Node(data)
         cur = self.head
+        # cur = self.head
         while cur.next is not None:
             cur = cur.next
         cur.next = new_node
@@ -35,15 +36,22 @@ class linkedList:
 
 linked_List = linkedList()
 
+linked_List.addElement(1)
+linked_List.addElement(2)
+linked_List.addElement(5)
+linked_List.addElement(6)
+linked_List.addElement(8)
+# linked_List.display()
 
-def addEl():
-    elem = [1, 3, 5, 6, 7, 9]
-    for e in elem:
-        linked_List.addElement(e)
 
+# def addEl():
+#     elem = [1, 3, 5, 6, 7, 9]
+#     for e in elem:
+#         linked_List.addElement(e)
+#
+#
+# addEl()
+linked_List.display()
 
-addEl()
-linkedList.display()
-
-x = input("enter the element: ")
-print(x)
+# x = input("enter the element: ")
+# print(x)

@@ -30,7 +30,8 @@ routes = [
     ("Paris", "Dubai"),
     ("Paris","New York"),
     ("Dubai", "New York"),
-    ("New York", "Toronto")
+    ("New York", "Toronto"),
+    ("China", "Japan"),
 ]
 
 route_graph = Graph(routes)

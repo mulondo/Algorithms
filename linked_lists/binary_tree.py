@@ -1,10 +1,19 @@
 class Node:
-    def __init__(self, data = None, left = None, right = None):
+    """
+        Node class that defines the behavior of a node
+    """
+
+    def __init__(self, data=None, left=None, right=None):
         self.value = data
         self.left = None
         self.right = None
 
-class  BinaryTree:
+
+class BinaryTree:
+    """
+        Binary tree class that defines the behavior of a binary tree
+    """
+
     def __init__(self):
         self.root = None
 
@@ -34,7 +43,7 @@ class  BinaryTree:
             return self._display(self.root)
 
     def _display(self, cur_node):
-        if cur_node!= None:
+        if cur_node is not None:
             self._display(cur_node.left)
             print(str(cur_node.value))
             self._display(cur_node.right)

@@ -48,7 +48,7 @@ class binary_search_tree:
     def _search(self, value, cur_node):
         if value == cur_node.true:
             return True
-        elif value < cur_node.value and cur_node.left_child is not None:
+        elif value < cur_node.value and cur_node.left is not None:
             self._search(value, cur_node.left)
         elif value > cur_node.value and cur_node.right is not None:
             self._search(value, cur_node.right)

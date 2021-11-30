@@ -1,4 +1,7 @@
 class HashTable:
+    """
+    Defines the behavior of a hashmap
+    """
     def __init__(self):
         self.MAX = 10
         self.arr = [None for i in range(self.MAX)]
@@ -10,6 +13,11 @@ class HashTable:
         return hash % self.MAX
 
     def __setitem__(self, key, value):
+        """
+        :param key:
+        :param value:
+        :return:
+        """
         h = self.get_hash(key)
         self.arr[h] = value
 
@@ -18,8 +26,8 @@ class HashTable:
         return self.arr[h]
 
 
-myhash = HashTable()
-myhash['march 6'] = 150
-myhash['march 17'] =120
+my_hash = HashTable()
+my_hash['march 6'] = 150
+my_hash['march 17'] =120
 
-print('This is the value :', myhash['march 6'])
+print('This is the value :', my_hash['march 6'])
